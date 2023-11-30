@@ -1,0 +1,110 @@
+// out:../css/
+.bg-body-tertiary {
+  background-color: black !important;
+
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.navbar-brand img {
+  height: 4vw;
+}
+.navbar-brand {
+  background-color: chartreuse;
+}
+
+.carousel {
+  @media (max-width: 768px) {
+    .carousel-item {
+      height: 250px;
+    }
+  }
+  @media (min-width: 768px) {
+    .carousel-item {
+      height: 400px;
+    }
+  }
+  @media (min-width: 992px) {
+    .carousel-item {
+      height: 700px;
+    }
+  }
+  .carousel-item {
+    background-size: cover;
+    background-position: center 0;
+  }
+  .carousel-item:nth-child(1) {
+    background-image: url(../img/pexels-cha-martínez-12190975.jpg);
+  }
+  .carousel-item:nth-child(2) {
+    background-image: url(../img/pexels-denniz-futalan-6716754.jpg);
+  }
+  .carousel-item:nth-child(3) {
+    background-image: url(../img/pexels-sami-abdullah-7359476.jpg);
+  }
+
+  .carousel-item h1 {
+    color: white;
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 5vw;
+    font-weight: 600;
+  }
+  .carousel-item p {
+    color: white;
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 2vw;
+  }
+}
+
+.nav-item a {
+  color: white;
+  text-align: end;
+}
+.nav-item a:hover {
+  color: chartreuse;
+}
+.navbar-toggler {
+  background-color: white;
+}
+.skill {
+  margin: 60px;
+  text-align: center;
+  .row {
+    margin-top: 60px;
+    div {
+      height: 200px;
+      margin-bottom: 10px;
+    }
+    a {
+      display: block;
+      padding: 50px;
+      height: 200px;
+      background-color: grey;
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+    a:hover {
+      background-color: chartreuse;
+      color: black;
+    }
+  }
+}
+
+form {
+  margin: 10% 30%;
+}
+.footer {
+  background-color: lightgray;
+  height: 100px;
+  text-align: center;
+
+  div {
+    padding-top: 50px;
+  }
+}
